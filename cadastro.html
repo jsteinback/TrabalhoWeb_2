@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/icone.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Amor &#38; C&atilde;o</title>
+    <script src="js/util.js"></script>
+</head>
+
+<body onload="verificaLogin()">
+    <header>
+        <a href="paginaPrincipal.html"><img src="img/logo.jpg" class="float-start"></a>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">Servi&ccedil;os</a>
+                    <ul class="dropdown-menu">
+                        <li><span class="dropdown-item-text">Banho</span></li>
+                        <li><span class="dropdown-item-text">Tosa</span></li>
+                        <li><span class="dropdown-item-text">Hospedagem</span></li>
+                        <li><span class="dropdown-item-text">Creche</span></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">Endere&ccedil;os</a>
+                    <ul class="dropdown-menu">
+                        <li><span class="dropdown-item-text">Ant&ocirc;nio da Veiga</span></li>
+                        <li><span class="dropdown-item-text">Humberto de Campos</span></li>
+                        <li><span class="dropdown-item-text">General Os&oacute;rio</span></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+            <label for="login" class="form-label">Confirme login:</label>
+            <input type="text" class="form-control" id="login" name="login">
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="banho" name="banho" value="banho">
+            <label class="form-check-label" for="banho">Banho</label>
+            <input type="checkbox" class="form-check-input" id="tosa" name="tosa" value="tosa">
+            <label class="form-check-label" for="tosa">Tosa</label>
+            <input type="checkbox" class="form-check-input" id="hosp" name="hosp" value="hosp">
+            <label class="form-check-label" for="hosp">Hospedagem/Creche</label>
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="nome" class="form-label">Nome do pet:</label>
+            <input type="text" class="form-control" id="nome" name="nome">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="idade" class="form-label">Idade:</label>
+            <input type="text" class="form-control" id="idade" name="idade">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="data" class="form-label">Data:</label>
+            <input type="date" class="form-control" id="data" name="data">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="hora" class="form-label">Horário:</label>
+            <input type="time" class="form-control" id="hora" name="hora">
+        </div>
+        <button onclick="localStorage.setItem();" class="btn btn-primary">Salvar</button>
+    </form>
+
+    <!-- <button onclick="localStorage.setItem();" class="btn btn-primary">
+        <a href="relatorio.html">Relat&oacute;rio</a>
+        </button>
+
+    <table class="table table-stripped table-hover">
+        <tbody>
+            <tr>
+                <th>Informa&ccedil;&otilde;es</th>
+            </tr>
+            <tr style="text-align: right;">
+                <td> <button onclick="localStorage.removeItem();" class="btn btn-primary">Excluir</button>
+                    <button onclick="localStorage.setItem();" class="btn btn-primary">Editar</button>
+
+                </td>
+            </tr>
+
+        </tbody>
+    </table> -->
+
+    <footer>
+        <div>
+            Site desenvolvido por: </br>
+            Bruno Buhr Neto </br>
+            Helena Teodora Zimmermann </br>
+            J&eacute;ssica Aline Steinback </br>
+        </div>
+    </footer>
+
+</body>
+
+</html>

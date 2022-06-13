@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/icone.png">
+    <title>Amor &#38; C&atilde;o &#45; Login</title>
+    <script src="js/util.js"></script>
+</head>
+
+<body onload="verificaLogin()">
+    <header>
+        <a href="paginaPrincipal.html"><img src="img/logo.jpg" class="float-start"></a>
+    </header>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">Servi&ccedil;os</a>
+                    <ul class="dropdown-menu">
+                        <li><span class="dropdown-item-text">Banho</span></li>
+                        <li><span class="dropdown-item-text">Tosa</span></li>
+                        <li><span class="dropdown-item-text">Hospedagem</span></li>
+                        <li><span class="dropdown-item-text">Creche</span></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">Endere&ccedil;os</a>
+                    <ul class="dropdown-menu">
+                        <li><span class="dropdown-item-text">Ant&ocirc;nio da Veiga</span></li>
+                        <li><span class="dropdown-item-text">Humberto de Campos</span></li>
+                        <li><span class="dropdown-item-text">General Os&oacute;rio</span></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <form action="/action_page.php">
+             <div class="mb-3 mt-3">
+                <label for="login">Login:</label>
+                <input type="text" class="form-control" id="login" name="login">
+            </div>
+            <div class="mb-3">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" id="senha" name="senha">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="login()">Cadastrar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            Site desenvolvido por: </br>
+            Bruno Buhr Neto </br>
+            Helena Teodora Zimmermann </br>
+            J&eacute;ssica Aline Steinback </br>
+        </div>
+    </footer>
+
+</body>
+
+</html>
