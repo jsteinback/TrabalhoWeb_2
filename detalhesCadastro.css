@@ -1,0 +1,63 @@
+.fLayout {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: right;
+}
+
+.menuPrincipal>li {
+    display: inline-block;
+}
+
+.menuPrincipal {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    background-color: lightblue;
+    width: 10%;
+    color: black;
+    padding: 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menuPrincipal>li:hover .subMenu {
+    visibility: visible;
+}
+
+.subMenu {
+    list-style: none;
+    visibility: hidden;
+    background-color: lightcyan;
+    position: fixed;
+    padding: 10px;
+}
+
+form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: lightgrey;
+    color: grey;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
